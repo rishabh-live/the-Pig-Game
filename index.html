@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐷</text></svg>"
+    />
+    <meta name="viewport" content="width=1024" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pig Game</title>
+  </head>
+  <body>
+    <div class="outer hidden">
+      <div class="modal">
+        <center>
+          <div class="instructions--head">
+            RULES
+            <div class="cancell">
+              <button id="cancel" type="submit">&times;</button>
+            </div>
+          </div>
+          <div class="instructions">
+            <p>🤹 This is a 2-Person Game.</p>
+            <p>🎲 Roll the Dice and get a Current Score!</p>
+            <p>🤹 Keep Rolling and have your Current Scores added up!</p>
+            <p>❗️ Roll 1 and Lose all your Current Score..</p>
+            <p>🤹 Hold your Total Score and pass the Dice to your Friend...</p>
+            <p>🏅 First one to reach Total Score as 100 WINS..!</p>
+          </div>
+
+          <div class="player1">
+            <input
+              class="player--modal"
+              id="p1"
+              type="text"
+              name="pl1"
+              placeholder="Enter Your Name"
+              required
+            />
+          </div>
+          <div class="player2">
+            <input
+              class="player--modal"
+              id="p2"
+              type="text"
+              name="pl2"
+              placeholder="Enter Friend's Name"
+              required
+            />
+          </div>
+          <div class="button">
+            <button id="home" type="submit">Submit Here</button>
+          </div>
+          <div class="author">
+            <a href="https://github.com/manu-karenite"
+              ><img src="github.png" style="height: 60px" style="width: 60px"
+            /></a>
+            Developed By Manavesh Narendra
+            <a href="https://www.linkedin.com/in/manavesh-narendra-489833196/"
+              ><img src="linkedIn.png" width="60px" height="60px;"
+            /></a>
+          </div>
+        </center>
+      </div>
+    </div>
+
+    <!-- hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii-->
+    <main class="lcol-12 scol-12 mcol-12">
+      <section class="player player--0 player--active lcol-12 scol-6 mcol-6">
+        <h2 class="name" id="name--0">Player 1</h2>
+        <p class="score" id="score--0">43</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--0">0</p>
+        </div>
+      </section>
+      <section class="player player--1 lcol-12 scol-6 mcol-6">
+        <h2 class="name" id="name--1">Player 2</h2>
+        <p class="score" id="score--1">24</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--1">0</p>
+        </div>
+      </section>
+
+      <img src="dice-5.png" alt="Playing dice" class="dice" />
+      <button class="btn btn--start">▶️ Start Game</button>
+      <button class="btn btn--new">🔄 New game</button>
+      <button class="btn btn--roll">🎲 Roll dice</button>
+      <button class="btn btn--hold">📥 Hold</button>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
